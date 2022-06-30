@@ -1,0 +1,474 @@
+/* reset css */
+*{
+    /* emmet */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+#main {
+
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+    #nav{
+        display: inline-block;
+    }   
+
+    #nav, .subnav {
+        list-style-type: none ;
+    }
+
+    #nav > li{
+        display: inline-block;
+    }
+
+    #nav li{
+        position: relative;
+    }
+
+    #nav > li > a{
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    #nav li a{
+        text-decoration: none;
+        line-height: 46px;
+        padding: 0 24px;
+        display: block;
+    }
+
+    #nav li:hover .subnav{
+        display: block;
+    }
+
+    #nav > li:hover > a,
+    #nav .subnav li:hover a{
+        color: #000;
+        background-color: #ccc;
+
+    }
+
+    #nav .subnav a{
+        color: #000;
+        padding: 0 12px;
+        line-height: 38px;
+    }
+
+    #nav .subnav{
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        min-width: 160px;
+        top 100%;
+        left 0;
+    }
+
+    /* Phần 3 : header search */
+
+    #nav .nav-arrow-down{
+        font-size: 12px;
+    }
+/* làm nút search */
+
+    #header .search-button{
+        float: right;
+        padding: 0 21px;
+    }
+
+    #header .search-button:hover{
+        background-color: #f44336;
+        cursor: pointer;
+    }
+
+    #header .search-moblie-btn:hover{
+        background-color: #ccc;
+    }
+
+    #header .search-icon{
+        color: #fff;
+        font-size: 20px;
+        line-height: 46px;
+    }
+
+/* làm nút mobile menu */
+    #header .mobile-menu-btn{
+        float: right;
+        padding: 0 21px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    #header .mobile-menu-btn:hover{
+        background-color: #ccc;
+    }
+
+    #header .mobile-menu-btn:hover .menu-icon{
+        color: #000;
+    }
+
+    #header .menu-icon{
+        color: #fff;
+        font-size: 20px;
+        line-height: 46px;
+    }
+
+    /* Phần 4: Header fixed CSS */
+    
+
+    /* Phần 5: làm slider */
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/chicago.jpg') top center/ cover no-repeat;
+
+}
+
+    #slider .text-content{
+        position: absolute;
+        bottom: 47px;
+        color: #fff;
+
+                        /* căn giữa */
+            /* CÁCH 1 */
+                    /* left: 50%;
+                    transform: translateX(-50%); */
+
+        width: 100%;
+        text-align: center;
+    }
+
+    #slider .text-heading{
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    #slider .text-dicription{
+        font-size: 15px;
+        margin-top: 25px;
+        text-shadow: 0 0 1px #000;
+    }
+
+                /* Phần 6 : làm content */
+/* 6.1 * : about content : phần giới thiệu nhóm nhạc*/
+
+#content {
+
+   
+}
+/* phần tạo header và sub-header dùng chung */
+
+    #content .content-section{
+        width: 800px;
+        /* dưới là fix lề ở tablet reponsive */
+        max-width: 100%;
+        padding: 64px 0 112px;
+        margin-left: auto;
+        margin-right: auto;
+        /* dưới là phần sửa lề ở tablet reponsive */
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    #content .section-heading{
+        text-align: center;
+        /* căn giữa */
+        font-size: 30px;
+        font-weight: 500;
+        /* làm chữ mỏng đi */
+        letter-spacing: 4px;
+    }
+
+    #content .section-sub-heading{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 15px;
+        /* làm chữ nghiêng */
+        font-style: italic;
+        opacity: 0.6;
+    }
+/* Hết phần tạo header và sub-header dùng chung */
+
+/* Tạo content giới thiệu của phần giới thiệu */
+
+    #content .section-content{
+        margin-top: 15px;
+        /* căn đều 2 bên */
+        text-align: justify;
+        /* khoảng cách giữa 2 dòng chữ. TA 1.4,TV 1.6 */
+        line-height: 1.4;
+    }
+
+/* Phần 7. Team section CSS : tạo phần giới thiệu thành viên*/
+    #content .section-member{
+        /* overflow: hidden; */
+        margin-top: 48px;
+    }
+
+    #content .member-name{
+        font-size: 15px;
+        /* margin-bottom: 15px; */
+    }
+
+    #content .member-avt{
+        width: 154px;
+        margin-top: 15px;
+        border-radius: 4px;
+    }
+/* Phần 8. Tour ticket : làm phần tuor */
+    /* tour section */
+    .tour-section{
+        background-color: #000;
+    }
+
+    /* tạo chữ màu trắng dùng cho tất cả */
+    .text-white{
+        color: #fff !important;
+    }
+    
+    /* tạo phần list bán vé */
+    .book-tickets{
+        background-color: #fff;
+        margin-top: 40px;
+        list-style: none;
+    }
+    /* tăng độ dày lên và màu*/
+    .book-tickets li{
+        /* làm màu chữ nhạt đi */
+        color: #757575;
+        font-size: 15px;
+        padding: 11px 16px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .book-tickets .Sold-out{
+        background-color: #f44336;
+        color: #fff;
+        padding: 3px 4px;
+        margin-left: 16px;
+    }
+
+     .book-tickets .quantity{
+        width: 24px;
+        float: right;
+        height: 24px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 24px;
+        margin-top: -3px;
+     }
+/* Phần 9 : tạo phần địa điểm ở tour */
+  /* 1. Phần New York */
+    .places-section{
+        margin-top: 16px;    
+        /* padding-bottom: 48px; */
+    }
+            .place-img{
+                width: 100%;
+                display: block;
+            }
+
+            .place-img:hover{
+                opacity: 0.6;
+            }
+
+            .place-content{
+                background-color: #fff;
+                padding: 16px;
+                font-size: 15px;
+
+            }
+                .places-heading{
+                    font-size: 15px;
+                    font-weight: 550;
+
+                }
+                .place-time{
+                    margin-top: 15px;
+                    color: #757575;
+
+                }
+                .place-desc{
+                    margin-top: 15px;
+                    line-height: 1.4;
+                }
+                .place-buy-ticket{
+                   color: #fff;
+                   background-color: black;
+                   text-decoration: none;
+                   padding: 11px 16px;
+                   display: inline-block;
+                   margin-top: 15px;
+                }
+                .place-buy-ticket:hover{
+                    color: black;
+                    background-color: #ccc;
+                    
+                }
+/* Phần 10. tạo thẻ hàng và cột dùng chung  */
+/* tạo phần dùng chung cho hàng */
+        .row{
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+
+        .row::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*  tạo phần dùng chung cho cột*/
+        .column{
+            float: left;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        /* tạo phần dùng chung tạo 3 cột */
+        .column-third{
+            width: 33.33333%;
+        }
+        /* tạo phần dùng chung tạo 2 cột  */
+        .column-two{
+            width: 50%;
+        }
+        /* tạo phần dùng chung tạo 1 cột */
+        .column-full{
+            width: 100%;
+        }
+        /* căn giữa dùng chung */
+        .text-center{
+            text-align: center !important;
+
+        }
+
+        .btn{
+            color: #fff;
+            background-color: black;
+            text-decoration: none;
+            padding: 11px 16px;
+            display: inline-block;
+            margin-top: 15px;
+            border: none;
+            text-align: center;
+            appearance: none;
+            -webkit-appearance: none;
+        }
+        .btn:hover{
+            cursor: pointer;
+            color: black;
+            background-color: #ccc;
+            
+        }
+
+        .pull-right{
+            float: right !important;
+        }
+
+/* Phần 11 : CSS cho phần thông tin liên hệ */
+        .contact-content{
+            margin-top: 48px;
+
+        }
+
+        .contact-info{
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .contact-info a{
+            color: #101aef;
+            opacity: 0.8;
+        }
+
+        .contact-info a:hover{
+            opacity: 1;
+        }
+
+        .contact-info i[class*="ti-"]{
+            width: 30px;
+            display: inline-block;
+        }
+
+        .contact-form{
+            font-size: 15px;
+        }
+
+        .contact-form .form-control{
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 100%;
+
+        }
+
+        .mt-8{
+            margin-top: 8px !important;
+        }
+
+        .mt-16{
+            margin-top: 16px !important;
+        }
+/* Phần 12 : làm phần Map */
+        .map-section img{
+            width: 100%;
+        }
+
+#fotter {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#fotter .social-list{
+    font-size: 24px;
+
+}
+
+#fotter .social-list a{
+    color: #3b3b3b;
+    text-decoration: none;
+}
+
+
+#fotter .social-list a:hover{
+    color: #757575;;
+}
+
+#fotter .copyright{
+    margin-top: 15px;
+    color: #3b3b3b;
+}
+
+#fotter .copyright a{
+    color: #3b3b3b;
+}
+
+#fotter .copyright a:hover{
+    color:#757575;
+}
